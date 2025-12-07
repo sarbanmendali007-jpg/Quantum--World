@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Realms - History</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-top">
+            <div class="container top-container">
+                <a href="index.html" class="small-logo-link">
+                    <img src="logo.png" alt="Q Logo" class="small-logo">
+                    Quantum World
+                </a>
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                        <li><a href="timeline.html"><i class="fas fa-clock"></i></a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i>
+                        </a></li>
+                    </ul>
+                </nav>
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="history-section">
+        <div class="container history-content">
+            <h2 style="text-align: center; color: var(--primary-blue); font-size: 2.5em; margin-bottom: 40px;">
+                <span style="color: var(--dark-grey);">⏳</span> THE QUANTUM REVOLUTION
+            </h2>
+
+            <div class="summary-block">
+                <h3>A Century of Uncertainty</h3>
+                <p>
+                    Quantum physics is the foundational theory that describes the nature and behavior of matter and energy at the atomic and subatomic level. Its emergence at the turn of the 20th century shattered the deterministic worldview of classical (Newtonian) physics. The quantum revolution began with the realization that energy is not continuous but comes in discrete packets, or "quanta." This discovery led to the development of radical concepts like wave-particle duality, superposition, and entanglement, which continue to drive modern technology and research.
+                </p>
+            </div>
+
+            <h2 style="text-align: center; font-size: 2em; color: var(--dark-grey); margin-bottom: 20px;">
+                THE FOUNDING FATHERS
+            </h2>
+
+            <div class="founder-grid">
+                
+                <div class="founder-card">
+                    <h4>WHO: Max Planck</h4>
+                    <p>
+                        **The Inventor (1900):** Planck is considered the father of quantum theory. He introduced the idea that energy is radiated and absorbed in **discrete units (quanta)** to explain black-body radiation, marking the birth of quantum mechanics.
+                    </p>
+                </div>
+
+                <div class="founder-card">
+                    <h4>HOW: Albert Einstein</h4>
+                    <p>
+                        **The Developer (1905):** Einstein solidified the quantum concept by using Planck's quanta to explain the photoelectric effect. He proposed that light itself consists of particles (**photons**), confirming that energy is fundamentally quantized.
+                    </p>
+                </div>
+
+                <div class="founder-card">
+                    <h4>HOW DEVELOPED: Niels Bohr</h4>
+                    <p>
+                        **The Builder (1913):** Bohr used quantization to develop his model of the atom, proposing that electrons only orbit in **specific, discrete shells**, which explained why atoms emit light at only specific wavelengths.                     </p>
+                </div>
+
+            </div>
+
+            <div class="qa-section">
+                <h2 style="text-align: center; font-size: 2em; color: var(--primary-blue); margin-bottom: 30px;">
+                    QUANTUM HISTORY QUIZ
+                </h2>
+
+                <div class="qa-item">
+                    <div class="question-row">
+                        <h4>Q1: What year is generally considered the birth year of quantum physics?</h4>
+                        <button class="answer-button" data-target="answer1">SHOW ANSWER</button>
+                    </div>
+                    <div class="answer-content" id="answer1">
+                        **Answer:** **1900**. This is the year Max Planck published his findings on black-body radiation, introducing the concept of the quantum.
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question-row">
+                        <h4>Q2: Which major phenomenon did Einstein explain using the concept of quanta?</h4>
+                        <button class="answer-button" data-target="answer2">SHOW ANSWER</button>
+                    </div>
+                    <div class="answer-content" id="answer2">
+                        **Answer:** The **Photoelectric Effect**. This demonstrated that light behaves as discrete particles (photons), not just waves.
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question-row">
+                        <h4>Q3: What classical physics concept did the discovery of quanta replace?</h4>
+                        <button class="answer-button" data-target="answer3">SHOW ANSWER</button>
+                    </div>
+                    <div class="answer-content" id="answer3">
+                        **Answer:** The belief that **energy is continuous**. Classical physics assumed energy could be emitted and absorbed in any amount, whereas quantum physics proved it comes in discrete packets.
+                    </div>
+                </div>
+
+            </div> </div>
+    </section>
+    
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 QUANTUM WORLD. All rights reserved.</p>
+        </div>
+         <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.answer-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.getAttribute('data-target');
+                    const answerDiv = document.getElementById(targetId);
+                    
+                    if (answerDiv.style.display === 'block') {
+                        // Hide the answer
+                        answerDiv.style.opacity = '0';
+                        setTimeout(() => {
+                            answerDiv.style.display = 'none';
+                            button.textContent = 'SHOW ANSWER';
+                        }, 500); // Wait for the transition
+                    } else {
+                        // Show the answer
+                        answerDiv.style.display = 'block';
+                        setTimeout(() => {
+                            answerDiv.style.opacity = '1';
+                        }, 10);
+                        button.textContent = 'HIDE ANSWER';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
