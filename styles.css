@@ -85,7 +85,7 @@ h1, h2, h3 {
     color: black;
 }
 .top-nav li a :hover {
-    background-color: #ffffff;
+    background-color: #080808;
 }
 
 .search-box {
@@ -116,7 +116,7 @@ h1, h2, h3 {
 }
 
 
-/* Hero Section (Main Logo Area) */
+/*(Main Logo Area) */
 .hero {
     text-align: center;
     padding: 40px 0;
@@ -139,9 +139,6 @@ h1, h2, h3 {
     font-size: 1.1em;
     margin-top: 5px;
 }
-
-/* --- Main Content Sections --- */
-
 
 
 /* Feature Grid */
@@ -181,7 +178,7 @@ h1, h2, h3 {
 /* Applications Section */
 .applications-section {
     padding: 60px 0;
-    background: #f1f1f1;
+    background: #000000;
 }
 
 .applications-section .container {
@@ -265,3 +262,91 @@ h1, h2, h3 {
 .social-links a:hover {
     color: var(--primary-blue);
 }
+ .research-header {
+            background-color: var(--light-blue);
+            padding: 40px 0 20px 0;
+            text-align: center;
+        }
+        .research-header h2 {
+            font-size: 2.2em;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+        .research-header p {
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        .university-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .uni-card {
+            background-color: #fff; /* Light background */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .uni-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2); /* Blue shadow on hover */
+        }
+
+        .uni-card a {
+            color: inherit; /* Maintain dark text for titles */
+        }
+
+        .uni-card-header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: var(--light-blue); /* Light blue header accent */
+            border-bottom: 1px solid var(--primary-blue);
+        }
+
+        .uni-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid var(--primary-blue); /* Primary blue border */
+            flex-shrink: 0;
+        }
+
+        .uni-info h3 {
+            font-family: var(--font-heading);
+            font-size: 1.2em;
+            color: var(--dark-grey); /* Dark grey text */
+            margin: 0;
+        }
+
+        .uni-info p {
+            font-size: 0.85em;
+            color: var(--text-color);
+            margin-top: 5px;
+        }
+        
+        .uni-link-area {
+            padding: 15px;
+            text-align: right;
+            border-top: 1px solid #eee;
+        }
+        
+        .uni-link {
+            font-family: var(--font-heading);
+            color: var(--primary-blue);
+            text-transform: uppercase;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        .uni-link:hover {
+            color: var(--dark-grey);
+        }
