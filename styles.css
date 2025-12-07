@@ -85,7 +85,7 @@ h1, h2, h3 {
     color: black;
 }
 .top-nav li a :hover {
-    background-color: #ffffff;
+    background-color:transparent;
 }
 
 .search-box {
