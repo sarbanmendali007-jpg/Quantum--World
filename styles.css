@@ -26,6 +26,7 @@ body {
     margin: 0 auto;
 }
 
+
 a {
     text-decoration: none;
     color: var(--primary-blue);
@@ -82,10 +83,11 @@ h1, h2, h3 {
 .top-nav li a {
     padding: 0 15px;
     font-size: 0.9em;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 .top-nav li a :hover {
     background-color:transparent;
+    color: #a7d6e4;
 }
 
 .search-box {
@@ -145,12 +147,25 @@ h1, h2, h3 {
 .features-grid {
     padding: 40px 0;
     text-align: center;
+    border: 1px solid var(--light-blue);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
 
 .features-grid .container {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+.features-grid .container .learn-more{
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.features-grid .container .learn-more :hover{
+    transform: translateY(-50px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
 }
 
 .feature-item {
@@ -260,7 +275,7 @@ h1, h2, h3 {
 }
 
 .social-links a:hover {
-    color: var(--primary-blue);
+    color:#71b4eb ;
 }
  .research-header {
             background-color: var(--light-blue);
