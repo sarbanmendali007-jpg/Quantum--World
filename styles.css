@@ -168,7 +168,7 @@ h1, h2, h3 {
     box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
 }
 
-.feature-item {
+.feature-content {
     flex: 1;
     padding: 20px;
     background: #fff;
@@ -176,7 +176,7 @@ h1, h2, h3 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.feature-icon{
+.feature-content .feature-icon{
     width: 60px;
     height: 60px;
     margin: 0 auto 15px;
