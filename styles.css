@@ -783,3 +783,154 @@ h1, h2, h3 {
             color: #888;
             margin-top: 10px;
         }
+ /* Custom Styles for the Utilities Page (Uses light theme variables) */
+        
+        .utilities-section {
+            padding: 60px 0;
+            background-color: #f8f9fa; /* Matches body background */
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        /* Grid for Utility Features */
+        .utility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .utility-card {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            /* Unique CSS: Bold left border accent */
+            border-left: 5px solid var(--primary-blue); 
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        
+        .utility-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+        }
+
+        .utility-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--primary-blue);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .utility-card h3 {
+            color: var(--dark-grey);
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        
+        .utility-card p {
+            color: var(--text-color);
+            font-size: 0.95em;
+        }
+        
+        .read-more-link {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+         /* Custom Styles for the Quantum Security Page (Uses light theme variables) */
+        
+        .security-section {
+            padding: 60px 0;
+            background-color: #fff; /* White background */
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .qkd-summary {
+            background-color: var(--light-blue);
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid var(--primary-blue);
+            margin-bottom: 60px;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.1);
+        }
+
+        .qkd-summary h3 {
+            color: var(--dark-grey);
+            font-size: 1.6em;
+            border-bottom: 1px dashed var(--primary-blue);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .qkd-summary p {
+            font-size: 1.05em;
+            color: var(--text-color);
+        }
+        
+        /* Grid for Core Concepts */
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns for visual balance */
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .concept-card {
+            background-color: #f8f9fa; /* Off-white background */
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .concept-card h4 {
+            color: var(--primary-blue);
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .concept-card p {
+            font-size: 0.95em;
+            color: var(--text-color);
+        }
+        
+        /* Highlighted Callout for Post-Quantum */
+        .post-quantum-callout {
+            background-color: var(--dark-grey);
+            color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .post-quantum-callout h3 {
+            color: #fff;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .post-quantum-callout p {
+            color: #ccc;
+            margin-bottom: 0;
+        }
+        .post-quantum-callout a {
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+        
